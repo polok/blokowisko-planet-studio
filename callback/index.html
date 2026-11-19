@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Authorization – Blokowisko Planet Studio</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="wrap"><article class="doc">
+<h1>Authorization complete</h1>
+<p class="meta">Returning to the local publishing tool…</p>
+<p id="msg">If nothing happens, make sure the tool is running on this computer, then reload this page.</p>
+</article></main>
+<script>
+// OAuth redirect target: hands the response (code, state) to the local tool on this computer.
+location.replace("http://127.0.0.1:8766/callback" + location.search);
+</script>
+</body>
+</html>
